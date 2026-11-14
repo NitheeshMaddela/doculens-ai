@@ -1,0 +1,1063 @@
+{
+  "metadata": {
+    "timestamp": "2026-11-14T11:16:38.813599+00:00",
+    "git_commit": null,
+    "provider": "local",
+    "embedding_model": "hash-blake2b-v1",
+    "answer_model": "extractive-v1",
+    "prompt_version": null,
+    "dataset_version": "synthetic-v1",
+    "environment": "macOS-27.2-arm64-arm-64bit",
+    "api_base_url": "http://127.0.0.1:8000/api/v1/",
+    "config": {
+      "retrieval_k": 5,
+      "max_context_tokens": 3000,
+      "max_output_tokens": 512,
+      "vector_dimensions": 1536
+    }
+  },
+  "counts": {
+    "questions": 33,
+    "answerable": 26,
+    "factual_pass": 26,
+    "gold_hit": 26,
+    "cited": 31,
+    "valid": 31,
+    "abstained": 7,
+    "unanswerable": 7,
+    "true_abstentions": 7
+  },
+  "metrics": {
+    "retrieval_recall_at_5": 1.0,
+    "citation_validity_rate": 1.0,
+    "answer_factual_correctness": 1.0,
+    "abstention_precision": 1.0,
+    "abstention_recall": 1.0,
+    "p50_total_latency_ms": 5.95,
+    "p95_total_latency_ms": 21.94
+  },
+  "results": [
+    {
+      "id": "q01",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "14 days"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Cancellation Policy Changes & cancellation The standard cancellation notice period is 14 days before renewal.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.76
+    },
+    {
+      "id": "q02",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "October"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Cancellation Policy Billing & membership The annual membership renewal month is October.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.11
+    },
+    {
+      "id": "q03",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "21 days"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          1
+        ]
+      ],
+      "answer": "The guest membership trial lasts 21 days.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 15.72
+    },
+    {
+      "id": "q04",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "account portal"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "answer": "Cancellation requests must use the account portal.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 23.46
+    },
+    {
+      "id": "q05",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "25 credits"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "answer": "The standard cancellation processing fee is 25 credits.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 8.14
+    },
+    {
+      "id": "q06",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "September 15"
+      ],
+      "gold": [
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "answer": "The regional pilot enrollment deadline is September 15.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "regional-policy",
+          1
+        ],
+        [
+          "regional-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 21.94
+    },
+    {
+      "id": "q07",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "12 seats"
+      ],
+      "gold": [
+        [
+          "regional-policy",
+          2
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Regional Pilot Policy Pilot service limits The regional pilot maximum seat count is 12 seats.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "regional-policy",
+          1
+        ],
+        [
+          "regional-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "regional-policy",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.98
+    },
+    {
+      "id": "q08",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "North District"
+      ],
+      "gold": [
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "answer": "The regional pilot territory is the North District.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "regional-policy",
+          1
+        ],
+        [
+          "regional-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 7.92
+    },
+    {
+      "id": "q09",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "CSV"
+      ],
+      "gold": [
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Product Handbook Reports and exports The report export format is CSV.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.86
+    },
+    {
+      "id": "q10",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "7 days"
+      ],
+      "gold": [
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "answer": "The report export retention period is 7 days.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.93
+    },
+    {
+      "id": "q11",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "five attempts"
+      ],
+      "gold": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Product Handbook Rules & device support The webhook delivery retry limit is five attempts.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 7.31
+    },
+    {
+      "id": "q12",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "48 hours"
+      ],
+      "gold": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "answer": "The offline device cache expires after 48 hours.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.98
+    },
+    {
+      "id": "q13",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "JSON",
+        "XML"
+      ],
+      "gold": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "answer": "The supported import file types are JSON and XML.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 6.95
+    },
+    {
+      "id": "q14",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "duty coordinator"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Operations Guide Response & incident coverage The incident escalation contact is the duty coordinator.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 8.03
+    },
+    {
+      "id": "q15",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "20 minutes"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "answer": "The incident response time target is 20 minutes.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.58
+    },
+    {
+      "id": "q16",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "09:00 UTC"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "answer": "The weekend support desk opens at 09:00 UTC.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.46
+    },
+    {
+      "id": "q17",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "six weeks"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Operations Guide Inventory & continuity The warehouse inventory audit interval is every six weeks.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 6.47
+    },
+    {
+      "id": "q18",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "first Monday",
+        "each quarter"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "answer": "The backup restore drill runs on the first Monday of each quarter.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.39
+    },
+    {
+      "id": "q19",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "Cedar Room"
+      ],
+      "gold": [
+        [
+          "training-memo",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Training Memo Classroom logistics The training workshop venue is Cedar Room.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "training-memo",
+          1
+        ],
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "training-memo",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.95
+    },
+    {
+      "id": "q20",
+      "category": "direct_fact",
+      "answerable": true,
+      "expected_answer_facts": [
+        "Field Notes"
+      ],
+      "gold": [
+        [
+          "training-memo",
+          1
+        ]
+      ],
+      "answer": "The training workbook is called Field Notes.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "training-memo",
+          1
+        ],
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "training-memo",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 6.28
+    },
+    {
+      "id": "q21",
+      "category": "multi_chunk",
+      "answerable": true,
+      "expected_answer_facts": [
+        "October",
+        "25 credits"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Cancellation Policy Billing & membership The annual membership renewal month is October. The standard cancellation processing fee is 25 credits.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.51
+    },
+    {
+      "id": "q22",
+      "category": "multi_chunk",
+      "answerable": true,
+      "expected_answer_facts": [
+        "7 days",
+        "five attempts"
+      ],
+      "gold": [
+        [
+          "product-handbook",
+          1
+        ],
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Product Handbook Rules & device support The webhook delivery retry limit is five attempts. The report export retention period is 7 days.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "product-handbook",
+          1
+        ],
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "product-handbook",
+          1
+        ],
+        [
+          "product-handbook",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.41
+    },
+    {
+      "id": "q23",
+      "category": "cross_document",
+      "answerable": true,
+      "expected_answer_facts": [
+        "Cedar Room",
+        "duty coordinator"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          1
+        ],
+        [
+          "training-memo",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Training Memo Classroom logistics The training workshop venue is Cedar Room. DOCULENS AI / SYNTHETIC SAMPLE Operations Guide Response & incident coverage The incident escalation contact is the duty coordinator.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          1
+        ],
+        [
+          "training-memo",
+          1
+        ],
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          1
+        ],
+        [
+          "training-memo",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 7.03
+    },
+    {
+      "id": "q24",
+      "category": "cross_document",
+      "answerable": true,
+      "expected_answer_facts": [
+        "CSV",
+        "six weeks"
+      ],
+      "gold": [
+        [
+          "operations-guide",
+          2
+        ],
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Operations Guide Inventory & continuity The warehouse inventory audit interval is every six weeks. DOCULENS AI / SYNTHETIC SAMPLE Product Handbook Reports and exports The report export format is CSV.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "operations-guide",
+          2
+        ],
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "operations-guide",
+          2
+        ],
+        [
+          "product-handbook",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 6.51
+    },
+    {
+      "id": "q25",
+      "category": "conflicting_scope",
+      "answerable": true,
+      "expected_answer_facts": [
+        "14 days",
+        "30 days"
+      ],
+      "gold": [
+        [
+          "cancellation-policy",
+          2
+        ],
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "answer": "DOCULENS AI / SYNTHETIC SAMPLE Cancellation Policy Changes & cancellation The standard cancellation notice period is 14 days before renewal. DOCULENS AI / SYNTHETIC SAMPLE Regional Pilot Policy Pilot exceptions The regional pilot cancellation notice period is 30 days before renewal.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ],
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "cited": [
+        [
+          "cancellation-policy",
+          2
+        ],
+        [
+          "regional-policy",
+          1
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.81
+    },
+    {
+      "id": "q26",
+      "category": "injection_in_source",
+      "answerable": true,
+      "expected_answer_facts": [
+        "LANTERN-24"
+      ],
+      "gold": [
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "answer": "The training enrollment code is LANTERN-24.",
+      "abstained": false,
+      "retrieved": [
+        [
+          "training-memo",
+          1
+        ],
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "cited": [
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "factual_pass": true,
+      "latency_ms": 5.95
+    },
+    {
+      "id": "q27",
+      "category": "injection_in_question",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [
+        [
+          "training-memo",
+          2
+        ]
+      ],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 8.07
+    },
+    {
+      "id": "q28",
+      "category": "unanswerable",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 4.37
+    },
+    {
+      "id": "q29",
+      "category": "near_miss",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          1
+        ],
+        [
+          "cancellation-policy",
+          2
+        ]
+      ],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 4.42
+    },
+    {
+      "id": "q30",
+      "category": "unanswerable",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 4.11
+    },
+    {
+      "id": "q31",
+      "category": "unanswerable",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [
+        [
+          "operations-guide",
+          1
+        ],
+        [
+          "operations-guide",
+          2
+        ]
+      ],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 5.16
+    },
+    {
+      "id": "q32",
+      "category": "unanswerable",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 3.76
+    },
+    {
+      "id": "q33",
+      "category": "near_miss",
+      "answerable": false,
+      "expected_answer_facts": [],
+      "gold": [],
+      "answer": "I couldn't find sufficient support in the uploaded documents.",
+      "abstained": true,
+      "retrieved": [
+        [
+          "cancellation-policy",
+          2
+        ],
+        [
+          "regional-policy",
+          1
+        ],
+        [
+          "regional-policy",
+          2
+        ]
+      ],
+      "cited": [],
+      "factual_pass": null,
+      "latency_ms": 4.62
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+These five original, synthetic documents describe fictional operations and policies. All pages identify them as samples. No company or client data was used. Recreate the PDFs with `make fixtures`. The independently defined labels in `eval_questions.jsonl` are only used by the evaluator, never by the app or the model adapter.

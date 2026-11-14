@@ -1,0 +1,41 @@
+name: DocuLens checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  local-demo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TEST_DATABASE_URL: postgresql+psycopg://doculens:doculens-local@127.0.0.1:5434/doculens_test
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with: {python-version: '3.12'}
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: pip install uv==0.9.11
+      - run: uv sync --locked
+      - run: npm --prefix apps/web ci
+      - run: make lint typecheck test
+      - run: make contracts && git diff --exit-code -- packages/contracts apps/web/app/api-schema.ts
+      - run: docker compose up --build -d
+      - run: |
+          for try in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:8000/api/v1/ready; then break; fi
+            sleep 2
+          done
+          curl -fsS http://127.0.0.1:8000/api/v1/ready
+          docker compose exec -T db createdb -U doculens doculens_test
+      - run: make integration-test
+      - run: cd apps/web && npx playwright install --with-deps chromium
+      - run: make e2e
+      - if: failure()
+        run: docker compose logs --tail 100
+      - if: always()
+        run: docker compose down -v

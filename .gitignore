@@ -1,0 +1,35 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage*
+htmlcov/
+*.egg-info/
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+playwright-report/
+test-results/
+.data/
+*.log
+.DS_Store
+.idea/
+.vscode/
+*.pem
+*.key
+
+# Local AI instructions, development specs, and portfolio work
+/AGENTS.md
+/docs/
+/prompts/
+/portfolio/
+
+# Keep only the data that the application serves in its evaluation panel.
+/reports/*
+!/reports/evaluation.json
